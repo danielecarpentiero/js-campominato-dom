@@ -1,0 +1,84 @@
+/* utilities */
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+/* /utilities */
+/* rules */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+/* /rules */
+/* header */
+header,
+footer {
+  padding: 20px;
+}
+
+.logo {
+  align-items: center;
+}
+
+.logo img {
+  width: 5%;
+  height: 5%;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.container {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.play button {
+  padding: 5px 20px;
+}
+
+#difficolta {
+  padding: 5px;
+  background-color: #e5e5e5;
+}
+/* /header */
+/* main */
+main {
+  flex-grow: 1;
+  background-color: aquamarine;
+  align-items: center;
+  justify-content: center;
+}
+
+.board {
+  width: 37.5rem;
+  height: 37.5rem;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.box {
+  width: calc(100% / 7);
+  height: calc(100% / 7);
+  border: 2px solid black;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.color {
+  background-color: skyblue;
+  transition: all 0.2s;
+}
