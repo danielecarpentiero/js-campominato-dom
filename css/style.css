@@ -45,7 +45,7 @@ h1 {
   justify-content: space-between;
 }
 
-.play button {
+.play {
   padding: 5px 20px;
 }
 
@@ -70,12 +70,25 @@ main {
 }
 
 .box {
-  width: calc(100% / 7);
-  height: calc(100% / 7);
   border: 2px solid black;
   align-items: center;
   justify-content: center;
   font-size: 2rem;
+}
+
+.easy {
+  width: calc(100% / 10);
+  height: calc(100% / 10);
+}
+
+.medium {
+  width: calc(100% / 9);
+  height: calc(100% / 9);
+}
+
+.hard {
+  width: calc(100% / 7);
+  height: calc(100% / 7);
 }
 
 .color {

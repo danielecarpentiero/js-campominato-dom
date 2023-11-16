@@ -11,9 +11,9 @@ buttonToggle.addEventListener("click", function () {
   toggleProperty(boxAdder, "hidden");
 });
 
-const selectDiff = document.getElementById("difficolta");
 /* casella diventa azzurra al click */
-for (let i = 0; i < 49; i++) {
+const myDiff = document.getElementById("difficolta").value;
+for (let i = 0; i < 100; i++) {
   const boxes = document.createElement("div");
   boxes.classList.add("box");
   boxes.classList.add("flex");
@@ -23,4 +23,16 @@ for (let i = 0; i < 49; i++) {
     toggleProperty(boxes, "color");
     console.log(`hai cliccato sulla casella numero ${i}`);
   });
+  switch (myDiff) {
+    case "medio":
+      boxes.classList.add("medium");
+      break;
+    case "difficile":
+      boxes.classList.add("hard");
+      break;
+    case "facile":
+    default:
+      boxes.classList.add("easy");
+      break;
+  }
 }
