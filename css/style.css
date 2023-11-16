@@ -96,3 +96,7 @@ main {
   background-color: skyblue;
   transition: all 0.2s;
 }
+
+.bomb {
+  background-color: red;
+}
